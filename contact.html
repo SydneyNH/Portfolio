@@ -6,7 +6,8 @@
 		<meta charset="UTF-8">
 		<title>Contact</title>
 		<link rel="stylesheet" href="css/stylesheet.css">
-		<script src="js/alttextdisplay.js"></script>
+		<script src="js/responsivenav.js"></script>
+		<script src="js/submitform.js"></script>
 	
 	</head>
 	
@@ -16,6 +17,9 @@
 			
 			<nav class="top-nav" id="myRnav">
 				
+				<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+					<i class="nav-bars">&#9776</i>
+				</a>
 				<a href="portfolio.html" class="hover">Home</a>
 				<a href="samples.html" class="hover">Samples</a>
 				<a href="contact.html" class="active">Contact</a>
@@ -26,12 +30,12 @@
 		
 		<main class="bg-image">
 		
-			<section class="form-container">
+			<section class="form-container" id="form-container">
 			
 				<label for="fname">First Name</label><br/>
-				<input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.." required><br/>
 				<label for="lname">Last Name</label><br/>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br/>
 				<label for="favpage">Which page has been your favorite?</label><br/>
 				<select id="favpage" name="favpage">
 					<option value="home">Home</option>
@@ -42,7 +46,7 @@
 				<input type="text" id="painting" name="painting" placeholder="Starry Night by Vincent Van Gogh"><br/>
 				<label for="other">Anything Else I Should Know?</label><br/>
 				<textarea id="other" name="other" placeholder="Tell me your story.."></textarea><br/>
-				<input type="submit" value="submit">
+				<input type="submit" value="Submit" onclick="submitForm(this)">
 				
 			</section>
 		
