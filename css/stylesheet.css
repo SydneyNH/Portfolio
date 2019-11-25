@@ -1,1 +1,88 @@
-a
+.bg-image{
+	
+	background:rgba(9, 19, 71, 0.5) url("../pics/starry_night.jpg") no-repeat center;
+	background-blend-mode: overlay;
+	height: 600px;
+	background-size: cover;
+	
+}
+
+html{
+	
+	background-color:rgba(9, 19, 71);
+	
+}
+
+header{
+	
+	background-color: rgba(9, 19, 71, 1);
+	border: 10px solid #091347;
+	
+}
+
+nav a{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #091347;
+	border: 10px solid rgba(255, 255, 255, 0);
+	border-radius: 5px;
+	padding: 0px 10%;
+	margin: 0% 3% 3%;
+	
+}
+
+nav a.active{
+	
+	color: #000000;
+	background-color: #FFFFFF;
+	
+}
+
+nav a:hover{
+	
+	background-color: rgba(255, 255, 255, 0.5);
+	
+}
+
+section{
+	
+	color: #FFFFFF;
+	padding: 30px 50px 100px;
+	
+}
+
+section img{
+	
+	height: 200px;
+	float: right;
+	margin: 0px 0px 0px 40px;
+	border-width: 2px;
+	border-color: #000000;
+	border-style: solid;
+	
+}
+
+aside{
+	
+	display: inline;
+	color: #FFFFFF;
+	float: right;
+	width: 50%;
+	
+}
+
+aside p{
+	
+	margin: 0% 40% 0%;
+	
+}
+
+summary{
+	
+	display: inline;
+	color: #FFFFFF;
+	float: left;
+	width: 50%;
+	
+}
