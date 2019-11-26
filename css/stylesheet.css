@@ -51,7 +51,7 @@ nav .icon{
 	
 }
 
-section{
+.normal-image{
 	
 	color: #FFFFFF;
 	padding: 30px 50px 100px;
@@ -59,7 +59,7 @@ section{
 	
 }
 
-section img{
+.normal-image img{
 	
 	height: 200px;
 	float: right;
@@ -70,7 +70,7 @@ section img{
 	
 }
 
-aside{
+.my-skills{
 	
 	display: inline;
 	color: #FFFFFF;
@@ -79,13 +79,13 @@ aside{
 	
 }
 
-aside p{
+.my-skills p{
 	
 	margin: 0% 40% 0%;
 	
 }
 
-summary{
+.about-me{
 	
 	display: inline;
 	color: #FFFFFF;
@@ -94,36 +94,78 @@ summary{
 	
 }
 
+progress{
+	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	margin: 0% 40%;
+	background-color: rgb(0, 255, 0);
+	
+}
+
+progress::-webkit-progress-bar{
+	
+	background-color: rgb(0, 255, 0);
+	
+}
+
+progress::-webkit-progress-value{
+	
+	background-color: rgb(0, 255, 0);
+	
+}
+
+progress::-moz-progress-bar{
+	
+	background-color: rgb(0, 255, 0);
+	
+}
+
 #message{
 	
 	display: block;
 	float: left;
-	margin: 10% 5%;
+	margin: 0%;
+	width: 20%;
+	
+}
+
+.article-content{
+	
+	border: 5px solid rgb(120, 120, 120);
+	background-color: rgb(9, 19, 71);
+	color: #FFFFFF;
+	height: 100%;
+	
+}
+
+.preview{
+	
+	max-width: 25%;
+	height: auto;
+	margin: 5% 0px 0px 40px;
+	border-width: 2px;
+	border-color: #000000;
+	border-style: solid;
 	
 }
 
 #image{
 	
+	max-width: 45%;
+	height: auto;
 	display: block;
-    line-height: 650px;
-	width: 350px;
-    height: 350px;
+	visibility: hidden;
 	border: 5px solid rgba(0, 0, 0);
-    background-image: url('');
-    background-repeat: no-repeat;
-    color:#FFFFFF;
-    text-align: center;
-    background-size: 100%;
-	margin-left: 60%;
-    margin-bottom: 25px;
-    font-size: 150%;
-	font-style: normal;
-	
+	margin-left: 30%;
+    	
 }
 
 input[type=text], select, textarea{
 	
-	width: 100%;
+	width: 90%;
 	padding: 10px;
 	border: 1px solid rgba(9, 19, 71);
 	margin: 5px 0px;
@@ -149,6 +191,7 @@ input[type=submit]:hover{
 
 .form-container{
 	
+	color: #FFFFFF;
 	width: 50%;
 	border: 5px solid rgba(125, 125, 125);
 	background-color: rgba(9, 19, 71);
@@ -160,13 +203,15 @@ input[type=submit]:hover{
 @media all and (max-width: 1500px){
 	
 	#image{
-		
-		height: 250px;
-		width: 250px;
-		margin-left: 60%;
 	
+	max-width: 60%;
+	height: auto;
+	display: block;
+	visibility: hidden;
+	border: 5px solid rgba(0, 0, 0);
+	margin-left: 30%;
+    	
 	}
-	
 }
 
 @media all and (max-width: 1000px){
@@ -177,7 +222,7 @@ input[type=submit]:hover{
 		
 	}
 	
-	aside{
+	.my-skills{
 		
 		text-align: center;
 		display: block;
@@ -186,7 +231,7 @@ input[type=submit]:hover{
 		
 	}
 	
-	summary{
+	.about-me{
 		
 		display: block;
 		width: 100%;
@@ -194,18 +239,32 @@ input[type=submit]:hover{
 		
 	}
 	
+	.article-content{
+		
+		height: 80%;
+		
+	}
+	
 	#image{
 		
-		width: 30%;
-		height: 30%;
-		margin-left: 50%;
+		max-width: 60%;
+		height: auto;
 		
+	}
+	
+	.preview{
+		
+		float: none;
+		max-width: 25%;
+		height: auto;
+		margin-top: 5%;
+		margin-right: 0%;
 	}
 	
 	#message{
 		
-		margin: 20% 5%;
-		margin-left: 0%;
+		width: 30%;
+		margin: 0%;
 		
 	}
 	
@@ -255,13 +314,30 @@ input[type=submit]:hover{
 		
 	}
 	
-	#image{
+	.article-content{
 		
-		display: none;
+		height: 80%;
 		
 	}
 	
-	aside{
+	#image{
+		
+		max-width: 90%;
+		height: auto;
+		margin: 20% 5%;
+		
+	}
+	
+	.preview{
+		
+		display: block;
+		float: none;
+		height: auto;
+		max-width: 60%;
+		margin-top: 10%;
+	}
+	
+	.my-skills{
 		
 		text-align: center;
 		display: block;
@@ -270,7 +346,7 @@ input[type=submit]:hover{
 		
 	}
 	
-	summary{
+	.about-me{
 		
 		display: block;
 		width: 100%;
@@ -278,7 +354,7 @@ input[type=submit]:hover{
 		
 	}
 	
-	section img{
+	.normal-image img{
 		
 		display: block;
 		height: 300px;

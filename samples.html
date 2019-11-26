@@ -18,7 +18,7 @@
 			<nav class="top-nav" id="myRnav">
 				
 				<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-					<i class="nav-bars">&#9776</i>
+					<i class="nav-bars">&#9776;</i>
 				</a>
 				<a href="portfolio.html" class="hover">Home</a>
 				<a href="samples.html" class="active">Samples</a>
@@ -29,29 +29,45 @@
 		</header>
 		
 		<main class="bg-image">
-		
-			<aside id= "message">
 			
+			<section class="article-content">
+			
+				<p id= "message">
 				Click or tap on an image below to learn more about each project.
+				</p>
 				
-			</aside>
-			
-			<section id= "image">
-			
+				<img
+				id = "image"
+				alt = "This is an image of my work."
+				src = "pics/example1.png">
+				
 			</section>
 		
 			<section>
 			
 				<img 
 				class = "preview" 
-				alt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-				fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-				qui officia deserunt mollit anim id est laborum." 
-				src = "pics/me.jpg" 
-				type = "button"
+				alt = "This is a very bare bones page in terms of CSS, but was my first experience with JavaScript.
+				It's not my first experience with scripting ever, since I've worked with Ruby and Python before.
+				That said, JavaScript is definitely different from those. Since it's difficult to demo in a written
+				form like this, I encourage you to go to the Contact page on this site, as the JavaScript used there
+				is very similar to this example." 
+				src = "pics/example3.png" 
+				onClick = "upDate(this)">
+				
+				<img 
+				class = "preview" 
+				alt = "This another page that is part of the first site I made. It features a table with 
+				some gradient for fun. You can't see it here, but hovering over the table slightly transitions
+				the color, similar to the page links above." 
+				src = "pics/example2.png" 
+				onClick = "upDate(this)">
+				
+				<img 
+				class = "preview" 
+				alt = "This is the first site I made with both HTML and CSS rules. Originally,
+				it had different colors but I really enjoy dark themes, so I changed it to be darker." 
+				src = "pics/example1.png" 
 				onClick = "upDate(this)">
 				
 			</section>
